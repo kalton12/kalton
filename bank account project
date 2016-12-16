@@ -1,0 +1,135 @@
+public BankAccount find(int acct) {
+  for (int i = 0; i < count; i++)
+  if (accounts[i].getAccountNumber() == acct) return accounts[i];
+  return null;
+ }
+   private int indexOf(BankAccount a) {
+  if (a == null) return -1;
+  for (int i = 0; i < count; i++)
+  if (accounts[i].equals(a)) return i;
+  return -1;
+ 
+  public class BankAccount{
+   private String Name;
+   private double Balance;
+   private int AcctNum;
+   private date Date;
+   
+  public BankAccount{
+    name = first name & last name
+    balance = $0
+    AcctNum = 000000000
+    Date = java.util.Date
+  }
+   
+   public BankAccount(string name);
+    string Name ("first name" + "last name")
+   public double getBalance;
+    return double balance("$0.00")
+   
+   public getAccountNumber(int math.random()* 10);
+    return "AcctNum"
+   
+   public deposite( "double balance" + " ");
+    return "balance after deposite"
+    
+  public withdraw ("double balance" - " ")
+   return "balance after withdraw"
+   
+   public string toString();
+   return "name" + "AcctNum" + "Balance" + "date"
+   
+   public equals( BankAccount 1 = BankAccount 2)
+   System.out.println(" BankAccounts are equal");
+   public equals ( BankAccount 1 != BankAccount 2)
+   System.out.println( "BankAccounts are not equal");
+   
+   
+   private generateAcctNum ( int math.random() * 10);
+ }
+ public class Bank {
+  private BankAccount[] accounts;
+  private int count;
+
+  public Bank(int cap) {
+    accounts = new BankAccount[cap];
+    count = 0;
+  }
+
+  private int indexOf(BankAccount a) {
+    return -1;
+  }
+
+  public boolean contains(BankAccount a) {
+    return indexOf(a) != -1;
+  }
+
+  public boolean add(BankAccount a) {
+    return true;
+  }
+
+  public boolean remove(BankAccount a) {
+    return true;
+  }
+
+  public int getCount() {
+    return count;
+  }
+
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+    sb.append("Bank Accounts\n");
+    for (BankAccount a : accounts)
+      sb.append(a + "\n  09146795923    \n");
+    return sb.toString();
+  }
+
+  public void sort() {
+    
+  }
+
+  private void doubleCapacity() {
+    
+  }
+
+  private boolean full() {
+    return count == accounts.length;
+  }
+   
+   public SavingsAccount extends BankAccount{
+     private double interest rate;
+    
+    public SavingsAccount(string s , double r)
+    string s = name;
+    double r = 0.05 ,
+   
+    public double getRate()
+    return "interest rate"
+    
+    public string toString()
+    super(toString);
+    
+    public void addInterest()
+    return "balance" + "interest rate"
+    
+    public CheckingAccount extends BankAccount{
+      
+      private checkNumber( string s , int c)
+      super(string s);
+      c = checkNumber; 
+      
+      public string getCheckNumber(to string)
+      return "checkNumber"
+      
+      public string toString
+      public void writeCheck(i++)
+      
+    }
+   }
+   
+   
+   
+   
+
+  }
+}
